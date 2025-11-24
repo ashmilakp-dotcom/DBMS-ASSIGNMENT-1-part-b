@@ -1,1 +1,1 @@
-
+sql -- Test Case 1: Check if the employee table exists SELECT 1 FROM information_schema.tables WHERE table_schema = 'public' AND table_name = 'employee'; -- Test Case 2: Check if an employee named 'John Doe' with salary 50000 exists INSERT INTO employee (id, name, salary) VALUES (1, 'John Doe', 50000); SELECT 1 FROM employee WHERE name = 'John Doe' AND salary = 50000;
